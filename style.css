@@ -7,6 +7,9 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #3e3e3e;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 /* Wrap your content in a container element for vertical layout */
@@ -14,23 +17,29 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;         /* Adds 20px space between each item */
+    gap: 20px; /* Adds 20px space between each item */
     padding: 30px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.title {
     color: #333;
+    font-family: "Quicksand", sans-serif;
     margin: 0;
 }
 
 input, button {
     padding: 10px 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+input:focus, button:focus {
+    outline: none;
 }
 
 /* Style adjustments for the button */
