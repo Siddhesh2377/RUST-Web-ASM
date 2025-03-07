@@ -1,5 +1,6 @@
 // main.js
-import init, { greet } from './pkg/web_project.js';
+import init, { greet } from '/pkg/web_project.js';
+
 
 async function run() {
     // Initialize the Wasm module
